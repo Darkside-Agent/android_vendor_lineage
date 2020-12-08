@@ -32,10 +32,6 @@ PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/bin/backuptool_ab.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.sh \
     vendor/lineage/prebuilt/common/bin/backuptool_ab.functions:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.functions \
     vendor/lineage/prebuilt/common/bin/backuptool_postinstall.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_postinstall.sh
-ifneq ($(TARGET_BUILD_VARIANT),user)
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.ota.allow_downgrade=true
-endif
 endif
 
 # Backup Services whitelist
@@ -194,7 +190,7 @@ DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 PRODUCT_VERSION_MAJOR = 10
 PRODUCT_VERSION_MINOR = 0
 
-# Increase CR Version with each major release.
+# Increase BB Version with each major release.
 BB_VERSION := 1.0
 
 LINEAGE_VERSION := BlackBoxHybrid-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-v$(BB_VERSION)
