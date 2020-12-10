@@ -6,8 +6,8 @@ endif
 
 # BlackBox System Version
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.blackbox.build.version=$(LINEAGE_VERSION) \
-    ro.blackbox.display.version=$(LINEAGE_DISPLAY_VERSION) \
+    ro.blackbox.build.version=$(BLACKBOX_VERSION) \
+    ro.blackbox.display.version=$(BLACKBOX_DISPLAY_VERSION) \
     ro.blackbox.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
     ro.modversion=$(BB_VERSION)
 

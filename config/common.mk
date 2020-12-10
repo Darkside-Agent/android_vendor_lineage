@@ -193,8 +193,8 @@ PRODUCT_VERSION_MINOR = 0
 # Increase BB Version with each major release.
 BB_VERSION := 1.0
 
-LINEAGE_VERSION := BlackBoxHybrid-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-v$(BB_VERSION)
-LINEAGE_DISPLAY_VERSION := BlackBoxHybrid-$(LINEAGE_BUILD)-v$(BB_VERSION)
+BLACKBOX_VERSION := BlackBoxHybrid-$(shell date +%Y%m%d)-$(LINEAGE_BUILD)-v$(BB_VERSION)
+BLACKBOX_DISPLAY_VERSION := BlackBoxHybrid-$(LINEAGE_BUILD)-v$(BB_VERSION)
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/lineage/build/target/product/security/lineage
