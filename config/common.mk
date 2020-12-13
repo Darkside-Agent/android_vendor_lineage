@@ -109,8 +109,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageParts \
     LineageSettingsProvider \
-    LineageSetupWizard \
     Updater
+    
+# Blackbox packages
+PRODUCT_PACKAGES += \
+    BlackboxSetupWizard
 
 # Themes
 PRODUCT_PACKAGES += \
